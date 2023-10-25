@@ -27,9 +27,10 @@ fetch('productos.json')
       boton.addEventListener('click', function() {
         const id = boton.getAttribute('data-id');
         console.log(id)
+        console.log(carrito.productos)
         agregarAlCarrito(Number(id));
       });
-    });
+    }); 
   })
   .catch(error => {
     console.error('Error al obtener los productos:', error);
@@ -51,7 +52,11 @@ fetch('productos.json')
     if (producto) {
       carrito.agregarProducto(producto);
     }
-  } 
+  }
+  
+  
+
+  
 
 
   
