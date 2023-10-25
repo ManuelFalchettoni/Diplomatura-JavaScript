@@ -1,0 +1,89 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Sofá Moderno Gris",
+      "precio": 549.99,
+      "descripcion": "Un sofá moderno y elegante en color gris. Combina comodidad y estilo.",
+      "imagen": "sofa-gris.jpg",
+      "color": "Gris",
+      "medidas": {
+        "alto": "85 cm",
+        "ancho": "190 cm",
+        "profundidad": "82 cm"
+      },
+      "pesoMaximo": "130 kg",
+      "material": "Tela y espuma de alta densidad",
+      "instruccionesCuidado": "Limpieza regular con un paño húmedo. Evitar la exposición directa al sol.",
+      "garantia": "Garantía de 2 años."
+    },
+    {
+      "id": 2,
+      "nombre": "Sofá de Cuero Clásico",
+      "precio": 899.99,
+      "descripcion": "Un sofá de cuero clásico y duradero. Perfecto para la sala de estar.",
+      "imagen": "sofa-cuero.jpg",
+      "color": "Negro",
+      "medidas": {
+        "alto": "90 cm",
+        "ancho": "200 cm",
+        "profundidad": "85 cm"
+      },
+      "pesoMaximo": "150 kg",
+      "material": "Cuero genuino y madera de alta calidad",
+      "instruccionesCuidado": "Limpiar con productos para cuero. Evitar la exposición a la humedad.",
+      "garantia": "Garantía de 5 años."
+    },
+    {
+      "id": 3,
+      "nombre": "Sofá de Terciopelo Elegante",
+      "precio": 699.99,
+      "descripcion": "Un sofá de terciopelo elegante y suave al tacto. Disponible en varios colores.",
+      "imagen": "sofa-terciopelo.jpg",
+      "color": "Azul",
+      "medidas": {
+        "alto": "88 cm",
+        "ancho": "195 cm",
+        "profundidad": "80 cm"
+      },
+      "pesoMaximo": "140 kg",
+      "material": "Terciopelo y espuma de alta densidad",
+      "instruccionesCuidado": "Aspirar regularmente y tratar las manchas con cuidado.",
+      "garantia": "Garantía de 3 años."
+    },
+    {
+      "id": 4,
+      "nombre": "Sofá Seccional Espacioso",
+      "precio": 1199.99,
+      "descripcion": "Un sofá seccional espacioso con espacio para toda la familia. Disfruta de la comodidad y versatilidad.",
+      "imagen": "sofa-seccional.jpg",
+      "color": "Gris oscuro",
+      "medidas": {
+        "alto": "85 cm",
+        "ancho": "280 cm",
+        "profundidad": "200 cm"
+      },
+      "pesoMaximo": "200 kg",
+      "material": "Tela de alta calidad y relleno de espuma",
+      "instruccionesCuidado": "Lavable a máquina en frío. Secar al aire libre.",
+      "garantia": "Garantía de 4 años."
+    },
+    {
+      "id": 5,
+      "nombre": "Sofá de Dos Plazas de Cuero Negro",
+      "precio": 699.99,
+      "descripcion": "Un sofá de dos plazas de cuero negro con un diseño contemporáneo y elegante.",
+      "imagen": "sofa-dos-plazas.jpg",
+      "color": "Negro",
+      "medidas": {
+        "alto": "80 cm",
+        "ancho": "160 cm",
+        "profundidad": "90 cm"
+      },
+      "pesoMaximo": "140 kg",
+      "material": "Cuero genuino y estructura de acero resistente",
+      "instruccionesCuidado": "Limpiar con productos para cuero. Evitar la exposición a la humedad.",
+      "garantia": "Garantía de 3 años."
+    }
+  ]
+}
