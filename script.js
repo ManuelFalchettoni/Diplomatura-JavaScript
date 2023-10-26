@@ -1,5 +1,4 @@
 let data;
-
 /* Productos */
 fetch('productos.json')
   .then(response => response.json())
@@ -21,7 +20,8 @@ fetch('productos.json')
       // Agrega el producto 
       listaProductos.appendChild(productoElement);
     });
-
+    
+    //Boton para agregar al carrito
     const botonesAgregarCarrito = document.querySelectorAll('.agregar-carrito');
     botonesAgregarCarrito.forEach(boton => {
       boton.addEventListener('click', function() {
@@ -37,20 +37,24 @@ fetch('productos.json')
   });
 
 
-  /* Carrito */
+  /*Creación del Carrito */
   const carrito = {
     productos: [],
+    total: 0,
     agregarProducto: function(producto) {
       this.productos.push(producto);
     },
-    // Otras funciones del carrito, como eliminar productos, calcular el total, etc.
+    
   };
 
   /* Agregar al carrito */
+  let totalCompra = 0;
    function agregarAlCarrito(id) {
     const producto = data.productos.find(producto => producto.id === id);
     if (producto) {
+      carrito.total += producto.precio;
       carrito.agregarProducto(producto);
+      localStorage.setItem('carrito', JSON.stringify(carrito));
     }
   }
   
