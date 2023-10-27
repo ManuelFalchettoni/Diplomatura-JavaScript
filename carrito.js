@@ -78,8 +78,7 @@ const eliminarBotones = document.querySelectorAll('.eliminar-producto');
   function eliminarProductoDelCarrito(nombreProducto) {
     //Buscamos el producto en el carrito
     const indice = carrito.productos.findIndex(producto => producto.nombre === nombreProducto);
-    //Si lo encontramos, lo elimino; si no lo encotramos el indice seria -1;
-    if (indice !== -1) {
+    if (indice !== -1) { //Si lo encontramos, lo elimino; si no lo encotramos el indice seria -1;
       const precioProductoEliminado = carrito.productos[indice].precio;//Se busca el precio del producto
       carrito.total -= precioProductoEliminado;//Se resta del total el precio del producto
       carrito.productos.splice(indice, 1);//Se elimina un elemento en la posicion indicada
