@@ -1,6 +1,7 @@
 # Diplomatura-JavaScript
 
 Explora los productos disponibles y agrégalos al carrito haciendo clic en el botón "Agregar al carrito".
+
 Puedes eliminar productos del carrito haciendo clic en el botón "Eliminar".
 El precio total se actualiza automáticamente a medida que agregas y eliminas productos.
 Simula el proceso de pago y muestra un mensaje de confirmación de compra.
