@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="productoInfo"></div>
+
+    <script>
+        // ID del producto
+        const productoId = 5; 
+
+        // Cargar el archivo JSON
+        fetch("../productos.json")
+            .then(response => response.json())
+            .then(data => {
+                const productos = data.productos;
+
+                // Buscar el producto por ID
+                const producto = productos.find(item => item.id === productoId);
+
+                if (producto) {
+                    // Mostrar la información del producto
+                    document.getElementById("productoInfo").innerHTML = `
+                        <h2>${producto.nombre}</h2>
+                        <p>${producto.descripcion}</p>
+                        <p>Precio: $${producto.precio}</p>
+                    `;
+                } else {
+                    // Producto no encontrado
+                    document.getElementById("productoInfo").innerHTML = "Producto no encontrado.";
+                }
+            })
+            .catch(error => {
+                console.error("Error al cargar el archivo JSON", error);
+            });
+    </script>
+</body>
+</html>

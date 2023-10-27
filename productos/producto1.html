@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="productoInfo"></div>
+
+    <script>
+      // ID del producto
+      const productoId = 1;
+
+      // Cargar el archivo JSON
+      fetch("../productos.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const productos = data.productos;
+
+          // Buscar el producto por ID
+          const producto = productos.find((item) => item.id === productoId);
+
+          if (producto) {
+            // Mostrar la información del producto
+            document.getElementById("productoInfo").innerHTML = `
+                        <h2>${producto.nombre}</h2>
+                        <p>${producto.descripcion}</p>
+                        <p>Precio: $${producto.precio}</p>
+                        <button class="agregar-carrito" data-id="${producto.id}">Agregar al carrito</button>
+                    `;
+          } else {
+            // Producto no encontrado
+            document.getElementById("productoInfo").innerHTML =
+              "Producto no encontrado.";
+          }
+          //Boton para agregar al carrito
+          const botonesAgregarCarrito =
+            document.querySelectorAll(".agregar-carrito");
+          botonesAgregarCarrito.forEach((boton) => {
+            boton.addEventListener("click", function () {
+              const id = boton.getAttribute("data-id");
+              console.log(id);
+              console.log(carrito.productos);
+              agregarAlCarrito(Number(id));
+            });
+          });
+        })
+        .catch((error) => {
+          console.error("Error al cargar el archivo JSON", error);
+        });
+    </script>
+  </body>
+</html>
