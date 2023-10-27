@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="productoInfo"></div>
+    <div><a href="../index.html">Volver</a></div>
 
     <script>
-        // ID del producto
-        const productoId = 5; 
+      // ID del producto
+      const productoId = 5;
 
-        // Cargar el archivo JSON
-        fetch("../productos.json")
-            .then(response => response.json())
-            .then(data => {
-                const productos = data.productos;
+      // Cargar el archivo JSON
+      fetch("../productos.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const productos = data.productos;
 
-                // Buscar el producto por ID
-                const producto = productos.find(item => item.id === productoId);
+          // Buscar el producto por ID
+          const producto = productos.find((item) => item.id === productoId);
 
-                if (producto) {
-                    // Mostrar la información del producto
-                    document.getElementById("productoInfo").innerHTML = `
-                        <h2>${producto.nombre}</h2>
-                        <p>${producto.descripcion}</p>
-                        <p>Precio: $${producto.precio}</p>
+          if (producto) {
+            // Mostrar la información del producto
+            document.getElementById("productoInfo").innerHTML = `
+                    <h2>${producto.nombre}</h2>
+                    <p>${producto.descripcion}</p>
+                    <p>Precio: $${producto.precio}</p>
+                    <p>Color: ${producto.color}</p>
+                    <p>Medidas: Alto:${producto.medidas.alto} Ancho:${producto.medidas.ancho} Profundidad:${producto.medidas.profundidad}</p>
+                    <p>Peso Máximo: ${producto.pesoMaximo}</p>
+                    <p>Material: ${producto.material}</p>
+                    <p>Instrucciones de Cuidado: ${producto.instruccionesCuidado}</p>
+                    <p>${producto.garantia}</p>
+                    <img src="${producto.imagen}" alt="${producto.nombre}">
                     `;
-                } else {
-                    // Producto no encontrado
-                    document.getElementById("productoInfo").innerHTML = "Producto no encontrado.";
-                }
-            })
-            .catch(error => {
-                console.error("Error al cargar el archivo JSON", error);
-            });
+          } else {
+            // Producto no encontrado
+            document.getElementById("productoInfo").innerHTML =
+              "Producto no encontrado.";
+          }
+        })
+        .catch((error) => {
+          console.error("Error al cargar el archivo JSON", error);
+        });
     </script>
-</body>
+  </body>
 </html>

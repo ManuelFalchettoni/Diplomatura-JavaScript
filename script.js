@@ -10,7 +10,7 @@ fetch('productos.json')
       // Crea elemento HTML 
       const productoElement = document.createElement('div');
       productoElement.innerHTML = `
-        <h2>${producto.nombre}</h2>
+        <h2><a href="productos/producto${producto.id}.html">${producto.nombre}</a></h2>
         <p>Precio: $${producto.precio}</p>
         <p>${producto.descripcion}</p>
         <img>${producto.imagen}</img>
