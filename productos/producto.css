@@ -1,3 +1,6 @@
+nav {
+  background-color: hsl(0, 0%, 96%); /* Puedes cambiar el color a tu elección */
+}
 #productoInfo {
   padding: 20px;
   margin: 20px;
