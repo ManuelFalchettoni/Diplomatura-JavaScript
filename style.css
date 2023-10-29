@@ -15,21 +15,21 @@
 }
 
 nav {
-  background-color: hsl(0, 0%, 96%); /* Puedes cambiar el color a tu elección */
+  background-color: hsl(0, 0%, 96%); /* Color fondo navbar */
 }
 .producto p {
-  font-size: 14px;
+  font-size: 14px; /* Tamaño de la fuente */
 }
 
 .producto img {
-  max-width: 100%;
-  height: auto;
-  max-height: 300px;
+  max-width: 100%; /* Maximo ancho */
+  height: auto; /* Altura automatica */
+  max-height: 300px; /* Maxima altura */
 }
 
 .producto .agregar-carrito {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #007bff; 
+  color: #fff; 
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
