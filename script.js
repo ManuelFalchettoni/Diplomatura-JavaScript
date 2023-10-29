@@ -9,12 +9,13 @@ fetch('productos.json')//Realizamos una solicitud al archivo JSON
     data.productos.forEach(producto => { //Se recorren todos los productos
       // Crea elemento HTML 
       const productoElement = document.createElement('div');
+      productoElement.classList.add('producto');//Le agrego una clase al elemento
       //Se especifica el cotenido nuevo del elemnto HTML
       productoElement.innerHTML = ` 
         <h2><a href="productos/producto${producto.id}.html">${producto.nombre}</a></h2>
         <p>Precio: $${producto.precio}</p>
         <p>${producto.descripcion}</p>
-        <img>${producto.imagen}</img>
+        <img src="./media/producto${producto.id}.png"></img>
         <button class="agregar-carrito" data-id="${producto.id}">Agregar al carrito</button>
       `;
 

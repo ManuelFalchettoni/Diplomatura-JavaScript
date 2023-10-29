@@ -1,0 +1,39 @@
+.producto {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+  width: 300px;
+  display: inline-block;
+}
+
+.producto h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.producto p {
+  font-size: 14px;
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+.producto .agregar-carrito {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.producto .agregar-carrito:hover {
+  background-color: #0056b3;
+}
