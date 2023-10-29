@@ -1,0 +1,39 @@
+#productoInfo {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+#productoInfo h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+#productoInfo p {
+  font-size: 16px;
+}
+
+#productoInfo img {
+  max-width: 100%; /* ancho máximo del contenedor */
+  height: auto; /* La altura se ajusta automáticamente */
+  max-height: 400px; /* Establece una altura máxima para la imagen*/
+}
+
+/* Estilos para  "Volver" */
+.volver {
+  display: block; 
+  text-align: center; /* Centra el contenido horizontalmente */
+  max-width: 200px; /*ancho máximo */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px auto; 
+}
+
+.volver:hover {
+  background-color: #0056b3;
+}

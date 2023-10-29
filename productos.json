@@ -5,7 +5,6 @@
       "nombre": "Sofá Moderno Gris",
       "precio": 549.99,
       "descripcion": "Un sofá moderno y elegante en color gris. Combina comodidad y estilo.",
-      "imagen": "sofa-gris.jpg",
       "color": "Gris",
       "medidas": {
         "alto": "85 cm",
@@ -22,8 +21,7 @@
       "nombre": "Sofá de Cuero Clásico",
       "precio": 899.99,
       "descripcion": "Un sofá de cuero clásico y duradero. Perfecto para la sala de estar.",
-      "imagen": "sofa-cuero.jpg",
-      "color": "Negro",
+      "color": "Marron",
       "medidas": {
         "alto": "90 cm",
         "ancho": "200 cm",
@@ -39,7 +37,6 @@
       "nombre": "Sofá de Terciopelo Elegante",
       "precio": 699.99,
       "descripcion": "Un sofá de terciopelo elegante y suave al tacto. Disponible en varios colores.",
-      "imagen": "sofa-terciopelo.jpg",
       "color": "Azul",
       "medidas": {
         "alto": "88 cm",
@@ -56,7 +53,6 @@
       "nombre": "Sofá Seccional Espacioso",
       "precio": 1199.99,
       "descripcion": "Un sofá seccional espacioso con espacio para toda la familia. Disfruta de la comodidad y versatilidad.",
-      "imagen": "sofa-seccional.jpg",
       "color": "Gris oscuro",
       "medidas": {
         "alto": "85 cm",
@@ -73,7 +69,6 @@
       "nombre": "Sofá de Dos Plazas de Cuero Negro",
       "precio": 699.99,
       "descripcion": "Un sofá de dos plazas de cuero negro con un diseño contemporáneo y elegante.",
-      "imagen": "sofa-dos-plazas.jpg",
       "color": "Negro",
       "medidas": {
         "alto": "80 cm",
